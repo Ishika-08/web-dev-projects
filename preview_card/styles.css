@@ -1,0 +1,107 @@
+body{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-color: #FDEEDC;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.card{
+  display: grid;
+  grid-template-columns: 330px;
+  grid-template-rows: 500px;
+  grid-template-areas: "area";
+
+  margin-top: 80px;
+  background-color: #FDEEDC;
+}
+.card-img{
+  background-image: url("images/imgd.jpg");
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  background-size: cover;
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+}
+
+.card-text{
+  display: grid;
+  background-color: white;
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  grid-template-columns: 300px;
+  grid-template-rows: 10px 150px 100px 110px 70px 10px;
+  grid-template-areas: 'preview' "headline" "text" "price" "button" "footer";
+}
+
+.button{
+  grid-area: button;
+  background-color: darkgreen;
+  width:80%;
+  padding: 10px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 10px;
+  color: white;
+  margin: 10px;
+  margin-left: 30px;
+}
+
+.button:hover{
+  background-color: white;
+  color: darkgreen;
+  border: 2px solid darkgreen;
+}
+
+.preview{
+  grid-area: preview;
+  text-align: left;
+  margin-top:10px;
+  margin-left: 40px;
+  color: grey;
+  letter-spacing: 10px;
+  font-size: 15px;
+}
+
+.heading{
+  grid-area: headline;
+  padding: 40px;
+  text-align: left;
+  line-height: 30px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.content{
+  grid-area: text;
+  text-align: left;
+  margin-left: 40px;
+  margin-top: 10px;
+}
+
+.price{
+  grid-area: price;
+  text-align: left;
+  font-family: 'Raleway', sans-serif;
+  padding: 20px;
+}
+
+.footer{
+  grid-area: footer;
+  font-size: 10px;
+  text-align: center;
+  padding: 10px;
+  margin-left: 30px;
+}
+
+.col{
+  box-sizing: border-box;
+  float: left;
+  width: 50%;
+  padding: 20px;
+}
+
+@media
